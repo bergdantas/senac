@@ -1,7 +1,7 @@
 import sqlite3 #importo a biblioteca de conexão com o banco de dados
 
 def _executar(query):
-    db_path='./produto' #definio o local da base de dados
+    db_path='./produto' #defino o local da base de dados
     connection = sqlite3.connect(db_path) #abro a conexão
     cursor = connection.cursor() #crio o iterador para navegar e manipular registros da base de dados
     resultado = None
