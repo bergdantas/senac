@@ -18,9 +18,11 @@ print(tabela_preco["pimenta"]) #checar o registro
 #remover registro do dicionário
 del tabela_preco["cebola"]
 
-#buscar registro no dicionário
-print("tomate" in tabela_preco)
-print("manjericão" in tabela_preco)
+# Verificar se "cebola" está na tabela de preços
+if "cebola" in tabela_preco:
+    print("A cebola está na tabela de preços.")
+else:
+    print("A cebola não está na tabela de preços.")
 
 #atualizar registro no dicionário
 tabela_preco["pimenta"] = 4.5
