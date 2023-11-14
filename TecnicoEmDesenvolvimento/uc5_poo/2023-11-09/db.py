@@ -12,7 +12,7 @@ def _executar(query):
     except Exception as e:
         print(f'erro na execução da query: {e}') #lança exceção, caso não consiga executar uma query
     finally:
-        cursor.close #fecha o iterador
+        cursor.close() #fecha o iterador
         connection.close() #fecha a conexão
         return resultado
         
