@@ -10,9 +10,9 @@ def _executar(query):
         resultado = cursor.fetchall() #retorna linhas do resultado da consulta em uma lista
         connection.commit() #executa alteração na base de dados
     except Exception as e:
+        connection.rollback() #caso uma haja uma interrupção da transação, o rollback desfaz todos os efeitos desta transação incompleta 
         print(f'erro na execução da query: {e}') #lança exceção, caso não consiga executar uma query
     finally:
         cursor.close() #fecha o iterador
         connection.close() #fecha a conexão
         return resultado
-        
