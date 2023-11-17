@@ -33,6 +33,7 @@ class Produto:
         return produtos
 
     #método para buscar um produto cadastrado
+    #este método nao está se comportando da forma corretal. Vou refatorá-lo na primeira oportunidade
     @staticmethod
     def get_produto(id):
         query=f"SELECT * FROM produto WHERE id={int(id)}"
