@@ -28,7 +28,8 @@ class Listar:
     def get():
         print(Produto.get_produtos())
 
-#método para buscar produtos da base de dados   
+#método para buscar produtos da base de dados
+# herdando o erro do método get_produto() definido no model.   
 class Buscar:
     @staticmethod
     def get(id):
