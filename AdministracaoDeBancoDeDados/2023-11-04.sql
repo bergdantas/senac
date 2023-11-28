@@ -1,8 +1,8 @@
 --crio a base de dados
-CREATE DATABASE senac_escola
+CREATE DATABASE aula3
 
 --seleciono a base de dados
-USE senac_escola
+USE aula3
 
 --crio a tabela pessoa
 CREATE TABLE pessoa(
@@ -37,14 +37,12 @@ SELECT * FROM pessoa
 SELECT * FROM pessoa
 	WHERE cpf=56789012345
 
---edito um registro de pessoa:
---o nome de Isabela Santos ser� alterado para Isabela Ferreira
+--edito um registro de pessoa (o nome de Isabela Santos será alterado para Isabela Ferreira)
 UPDATE pessoa
 	SET nome='Isabela Ferreira'
 	WHERE cpf=56789012345
 
---apago um registro de pessoa:
---apagarei o registro de Isabela usando o cpf dela.
+--apago um registro de pessoa (apagarei o registro de Isabela usando o cpf dela)
 DELETE pessoa
 	WHERE cpf=56789012345
 
@@ -52,17 +50,16 @@ DELETE pessoa
 CREATE TABLE dependente(
 	cpf CHAR(11) NOT NULL,
 	nome VARCHAR(50) NOT NULL,
-	idPessoa INT NOT NULL FOREIGN KEY(idPessoa) 
-		REFERENCES pessoa(id) 
+	idPessoa INT NOT NULL FOREIGN KEY(idPessoa) REFERENCES pessoa(id) 
 )
 
---insiro três tuplas na tabela dependentes:
---todas estarão associadas a pessoa cujo id é 1.
+--insiro três tuplas na tabela dependentes (todas estarão associadas a pessoa cujo id é 1)
 INSERT INTO dependente(cpf, nome, idPessoa) VALUES
 ('58742458859', 'Joaquim', 1),
 ('85421548752', 'Maria', 1),
 ('74587424589', 'Bernardo', 1)
 
+--SELECTS:
 --descobrir o cpf dos dependentes, usando o cpf da pessoa.
 SELECT dependente.cpf FROM dependente, pessoa
 	WHERE pessoa.cpf='98652354785'
