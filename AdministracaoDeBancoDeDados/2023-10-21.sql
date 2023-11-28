@@ -1,8 +1,8 @@
 --crio a base de dados
-CREATE DATABASE senac_escola
-
+CREATE DATABASE aula1
+	
 --seleciono a base de dados
-USE senac_escola
+USE aula1
 
 --crio as tabelas que vão compor a base de dados
 CREATE TABLE pessoa(
@@ -31,7 +31,11 @@ CREATE TABLE telefone (
 	id_pessoa INT NOT NULL FOREIGN KEY(id_pessoa) REFERENCES pessoa(id),
 	numero CHAR(11) NOT NULL
 )
-CREATE TABLE ESTUDA (
+CREATE TABLE estuda (
 	id_pessoa INT NOT NULL FOREIGN KEY(id_pessoa) REFERENCES pessoa(id),
 	id_curso INT NOT NULL FOREIGN KEY(id_curso) REFERENCES curso(id),
 )
+
+--apago a base de dados
+USE master
+DROP DATABASE aula1
