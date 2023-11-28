@@ -1,5 +1,7 @@
-CREATE  DATABASE ATIVIDADE1
-USE ATIVIDADE1
+--correção da primeira atividade
+CREATE  DATABASE atividade1
+
+USE atividade1
 
 CREATE TABLE pessoa(
 id INT PRIMARY KEY IDENTITY (1,1),
@@ -23,20 +25,25 @@ idPessoa INT FOREIGN KEY(idPessoa) REFERENCES pessoa(id)
 )
 
 INSERT INTO pessoa (nome) values
-('Ana Julia'), ('João Medeiros'), ('Josenilda Santos'), ('Matheus Silva'), ('Francisco Morais')
+('Ana Julia'),
+('João Medeiros'),
+('Josenilda Santos'),
+('Matheus Silva'),
+('Francisco Morais')
+SELECT * FROM pessoa
 
-select * from telefone
 INSERT INTO telefone (operadora, numero, idPessoa) values
-('Claro', '84999252658',1),
-('Tim', '84998995424',1),
-('Vivo', '84981956987',1),
-('Vivo', '84981952648',2),
-('Claro', '84999225569',3),
-('Tim', '84999594578',3),
-('Tim', '84998965432',4),
-('Vivo', '84989953265',4),
-('Claro', '84999957856',5),
-('Oi', '84987279468',5)
+('Claro', '84985452158',1),
+('Tim', '84985452159',1),
+('Vivo', '84985425487',1),
+('Vivo', '84998548752',2),
+('Claro', '84998562548',3),
+('Tim', '84985425148',3),
+('Tim', '84985425698',4),
+('Vivo', '84985425159',4),
+('Claro', '84985426598',5),
+('Oi', '84985425698',5);
+select * from telefone
 
 INSERT INTO endereco (estado, cidade, bairro, rua, numero, cep, idPessoa) values
 ('Bahia', 'Vitoria da Conquista', 'Centro', 'Av. Edgar Santos', '95','45658609', 1),
@@ -48,18 +55,18 @@ INSERT INTO endereco (estado, cidade, bairro, rua, numero, cep, idPessoa) values
 ('Pernambuco', 'Casa Forte', 'Centro', 'Av. Governador Magalhaes', '2569','51500270', 5),
 ('Rio Grande do Norte', 'Parnamirim', 'Nova Parnamirim', 'Av. Maria Lacerda', '873','59054320', 5),
 ('Rio Grande do Norte', 'Natal', 'Alecrim', 'Av. Coronel Estevam', '1220','59020650', 5)
+SELECT * FROM endereco
 
---Pesquisar pela quantidade de telefones da pessoa 1
+--Pesquiso pela quantidade de telefones da pessoa 1
 SELECT COUNT(*)  
 	FROM telefone 
 		WHERE idPessoa=5
 
---Pesquisar pela quantidade de endereços da pessoa 4
+--Pesquiso pela quantidade de endereços da pessoa 4
 SELECT COUNT(*) 
 	FROM endereco 
 		WHERE idPessoa=4
 
---ATIVIDADE
+--Retomando a tabela inicial (antes da modelagem)
 SELECT p.nome, t.numero, e.estado, e.cidade, e.bairro, e.rua, e.numero, e.cep FROM pessoa p, telefone t, endereco e
 	WHERE p.id = t.idPessoa AND P.id = e.idPessoa
-
