@@ -1,4 +1,22 @@
---criação de 100 registros para a base de dados pessoa
+--crio a base de dados novamente
+CREATE DATABASE aula2
+
+--seleciono a base de dados
+USE aula2
+
+--crio a tabela pessoa
+CREATE TABLE pessoa(
+	id INT NOT NULL PRIMARY KEY,
+	nome VARCHAR(50) NOT NULL,
+	dataDeNascimento DATE NOT NULL,
+	cpf CHAR(11) NOT NULL,
+	sexo CHAR(1) NOT NULL
+)
+
+--listo os registros da tabela
+SELECT * FROM pessoa
+
+--crio 100 registros para a base de dados pessoa
 INSERT INTO PESSOA(id, nome, dataDeNascimento, cpf, sexo) VALUES
 (1, 'Josefina de Albuquerque', '1920-05-06', '98652354785', 'F'),
 (2, 'Antônio Silva', '1985-03-15', '12345678901', 'M'),
@@ -100,3 +118,6 @@ INSERT INTO PESSOA(id, nome, dataDeNascimento, cpf, sexo) VALUES
 (98, 'Mateus Costa', '1975-12-07', '54321098765', 'M'),
 (99, 'Valeria Oliveira', '1993-11-29', '98765432109', 'F'),
 (100, 'Cecília Rodrigues', '1972-04-16', '76543210987', 'F');
+
+--listo os registros da tabela
+SELECT * FROM pessoa
