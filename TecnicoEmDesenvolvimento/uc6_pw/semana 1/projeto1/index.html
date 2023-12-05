@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>html básico</title>
+    <link rel="icon" type="image/x-icon" href="images/icons8-praia-doodle-16.png" />
+</head>
+<body>
+    <h1 id="secManual">Manual HTML</h1>
+    <ol>
+        <li><a href="#secText" >Texto</a></li>
+        <li><a href="#secList">Lista</a></li>
+        <li><a href="#secTable">Tabela</a></li>
+        <li><a href="#secLink">Link</a></li>
+        <li><a href="#secImage">Imagem</a></li>
+        <li><a href="#secClip">Vídeo</a></li>
+        <li><a href="#secForm">Formulário</a></li>
+    </ol>
+        
+    <h2 id="secText"><a href="#secManual">1. Texto</a></h2>
+            <p>X<sup>2</sup>-4.a.c</p>
+            <p>H<sub>2</sub>O</p>
+            <p><strong>strong</strong></p>
+            <p><em>em</em></p>
+            <p><del>del</del></p>
+            <p><ins>ins</ins></p>
+        <h2 id="secList"><a href="#secManual">2. Listas</a></h2>
+        <h3>Listas não ordenadas</h3>
+        <ul>
+            <li>HTML</li>
+            <li>Linguagem</li>
+            <li>Marcação</li>
+        </ul>
+        <h3>Listas ordenadas</h3>
+        <ol>
+            <li>HTML</li>
+            <li>Linguagem</li>
+            <li>Marcação</li>
+        </ol>
+        <h3>Listas de definição</h3>
+        <dl>
+            <dt>HTML</dt>
+                <dd>É uma linguagem de marcação!</dd>
+        </dl>
+        <h2 id="secTable"><a href="#secManual">3. Tabelas</a></h2>
+        <table border="1">
+            <tr>
+                <th>Aluno</th>
+                <th>Nota</th>
+            </tr>
+            <tr>
+                <td>Almir</td>
+                <td>80</td>                
+            </tr>
+            <tr>
+                <td>Bernadete</td>
+                <td>50</td>                
+            </tr>
+            <tr>
+                <td>Zuila</td>
+                <td>75</td>                
+            </tr>
+        </table>
+        <h3>Exemplo de tabela com células mescladas</h3>
+        <table border="1">
+            <tr>
+                <th colspan="7">TABELA SALARIAL - MODELO</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Classe</th>
+                <th rowspan="2">Admissão</th>
+                <th>1<sup>a</sup> FAIXA</th>
+                <th>2<sup>a</sup> FAIXA</th>
+                <th>3<sup>a</sup> FAIXA</th>
+                <th>4<sup>a</sup> FAIXA</th>
+                <th>5<sup>a</sup> FAIXA</th>
+            </tr>
+            <tr>
+                <th>1<sup>o</sup> ANO</th>
+                <th>2<sup>o</sup> ANO</th>
+                <th>3<sup>o</sup> ANO</th>
+                <th>4<sup>o</sup> ANO</th>
+                <th>5<sup>o</sup> ANO</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>749</td>
+                <td>802</td>
+                <td>858</td>
+                <td>918</td>
+                <td>982</td>
+                <td>1051</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>802</td>
+                <td>858</td>
+                <td>918</td>
+                <td>982</td>
+                <td>1051</td>
+                <td>1124</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>879</td>
+                <td>941</td>
+                <td>1007</td>
+                <td>1077</td>
+                <td>1152</td>
+                <td>1233</td>
+            </tr>
+        </table>
+    <h2 id="secLink"><a href="#secManual">4. Link</a></h2>
+    <p><a href="http://www.google.com" target="">Google</a></p> <!-- URL ESTÁTICA -->
+    <p><a href="html/fotos_2023.html">Página de fotos</a></p> <!-- URL DINÂMICA -->
+
+    <h2 id="secImage"><a href="#secManual">5. Imagem</a></h2>
+    <img src="images/escritorio.jpg" width="400px" alt="Imagem de um personagem trabalhando no escritório" />
+    <img src="images/git.svg" width="200px" alt="logotipo do git" />
+    <a href="https://www.tiktok.com/pt-BR/"><img src="images/linux.svg" width="200px" alt="pinguim" /></a>
+    
+    <h2 id="secClip"><a href="#secManual">6. Vídeos</a></h2>
+        <h3>iframe</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0ugn13BQE6g?si=R1SCbgTKmSSeDY0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        <h3>hospedado localmente</h3>
+        <video controls>
+            <source src="clips/narutinho.mp4" type="video/mp4">
+            Não foi possível exibir o vídeo!
+        </video>
+
+        <h2 id="secForm"><a href="#secManual">7. Formulário</a></h2>
+        <form>
+            <input type="button" value="Cancelar">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            <input type="checkbox">
+            <input type="color">
+            <input type="date">
+            <input type="datetime-local">
+            <input type="email">
+            <input type="file">
+            <input type="hidden">
+            <input type="image">
+            <input type="month">
+            <input type="number">
+            <input type="password">
+            <input type="radio">
+            <input type="range">
+            <input type="search">
+            <input type="tel">
+            <input type="text">
+            <input type="time">
+            <input type="url">
+            <input type="week">
+        </form>
+        <h3>Exemplo de formulário de login</h3>
+        <form action="\login.php" method="post">
+            <p>Login</p>
+            <input type="text" />
+            <p>Senha</p>
+            <input type="password" />
+            <br />
+            <input type="submit" value="Login" />
+            <input type="reset" value="Limpar" />
+        </form>
+</body>
+</html>
+
