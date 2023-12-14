@@ -1,0 +1,8 @@
+ @media(max-width:320px){
+            .div2{
+                display: flex;
+            }
+            body{
+                flex-direction: column;
+            }
+        }
