@@ -121,3 +121,12 @@ INSERT INTO PESSOA(id, nome, dataDeNascimento, cpf, sexo) VALUES
 
 --listo os registros da tabela
 SELECT * FROM pessoa
+
+--modifico o nome da pessoa cujo id é 74
+UPDATE pessoa
+	SET nome='Beatriz Fernandes'
+	WHERE ID=74
+
+--modifico o estado civil de todas as pessoas
+UPDATE pessoa
+	SET estadoCivil='C'
