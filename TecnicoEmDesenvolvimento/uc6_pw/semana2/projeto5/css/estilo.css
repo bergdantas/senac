@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+}
+
+:root{
+    --corPrincipal: #000;
+    --corSecundaria: #000000; 
+    --corTerciaria: #ffffff;
+    --hoverCorTerciaria: #797878;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row; /*row (linhas) ou column(colunas)*/
+    background-color: chartreuse;
+}
+
+.cabecalhoLogo{
+    flex-grow: 1;
+    height: 10vh;
+    background-color: var(corSecundaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalhoNavegacao{
+    flex-grow: 4;
+    height: 10vh;
+    background-color: var(--corPrincipal); 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cabecalhoNavegacao a{
+    color: var(--corTerciaria);
+    margin: 0 10px;
+}
+
+.cabecalhoNavegacao a:hover{
+    color: var(--hoverCorTerciaria);
+}
+
+
+
