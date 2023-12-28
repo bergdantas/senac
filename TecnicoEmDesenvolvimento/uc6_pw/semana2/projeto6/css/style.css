@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.divPadrao{
+    width: 100vw;
+    height: 20vh;
+    font-size: xxx-large;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+.div1{
+    background-color: blue;
+}
+
+.div2{
+    background-color: chocolate;
+}
+
+.div3{
+    background-color: darkgreen;
+}
+
+.div4{
+    background-color: deeppink;
+}

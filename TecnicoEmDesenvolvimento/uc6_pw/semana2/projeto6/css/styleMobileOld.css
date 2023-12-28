@@ -1,0 +1,10 @@
+@media(max-width:320px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .div1, .div2, .div3, .div4{
+        display: flex;
+    }    
+}
+
