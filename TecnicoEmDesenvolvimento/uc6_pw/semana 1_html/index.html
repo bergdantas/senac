@@ -18,12 +18,12 @@
     </ol>
         
     <h2 id="secText"><a href="#secManual">1. Texto</a></h2>
-            <p>X<sup>2</sup>-4.a.c</p>
-            <p>H<sub>2</sub>O</p>
-            <p><strong>strong</strong></p>
-            <p><em>em</em></p>
-            <p><del>del</del></p>
-            <p><ins>ins</ins></p>
+            <p>Sobrescrito: X<sup>2</sup>-4.a.c</p>
+            <p>Subscrito: H<sub>2</sub>O</p>
+            <p>Negrito: <strong>strong</strong></p>
+            <p>Itálico: <em>em</em></p>
+            <p>Tachado: <del>del</del></p>
+            <p>Sublinhado: <ins>ins</ins></p>
         <h2 id="secList"><a href="#secManual">2. Listas</a></h2>
         <h3>Listas não ordenadas</h3>
         <ul>
@@ -111,8 +111,8 @@
             </tr>
         </table>
     <h2 id="secLink"><a href="#secManual">4. Link</a></h2>
-    <p><a href="http://www.google.com" target="">Google</a></p> <!-- URL ESTÁTICA -->
-    <p><a href="html/fotos_2023.html">Página de fotos</a></p> <!-- URL DINÂMICA -->
+    <p><a href="http://www.google.com" target="">Google (url estática)</a></p> <!-- URL ESTÁTICA -->
+    <p><a href="html/fotos_2023.html">Página de fotos (url dinâmica)</a></p> <!-- URL DINÂMICA -->
 
     <h2 id="secImage"><a href="#secManual">5. Imagem</a></h2>
     <img src="images/escritorio.jpg" width="400px" alt="Imagem de um personagem trabalhando no escritório" />
@@ -120,7 +120,7 @@
     <a href="https://www.tiktok.com/pt-BR/"><img src="images/linux.svg" width="200px" alt="pinguim" /></a>
     
     <h2 id="secClip"><a href="#secManual">6. Vídeos</a></h2>
-        <h3>iframe</h3>
+        <h3>Serviço de terceiros (iframe)</h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/0ugn13BQE6g?si=R1SCbgTKmSSeDY0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         
         <h3>hospedado localmente</h3>
@@ -131,29 +131,100 @@
 
         <h2 id="secForm"><a href="#secManual">7. Formulário</a></h2>
         <form>
+            <label>Button</label>
             <input type="button" value="Cancelar">
+            <br />
+
+            <label>Submit</label>
             <input type="submit" value="Enviar">
+            <br />
+
+            <label>Reset</label>
             <input type="reset" value="Limpar">
+            <br />
+            
+            <label>Checkbox</label>
             <input type="checkbox">
+            <br />
+            
+            <label>Color</label>
             <input type="color">
+            <br />
+            
+            <label>Date</label>
             <input type="date">
+            <br />
+            
+            <label>Datetime-local</label>
             <input type="datetime-local">
+            <br />
+            
+            <label>Email</label>
             <input type="email">
+            <br />
+            
+            <label>File</label>
             <input type="file">
+            <br />
+
+            <label>Hidden</label>
             <input type="hidden">
+            <br />
+
+            <label>Image</label>
             <input type="image">
+            <br />
+
+            <label>Month</label>
             <input type="month">
+            <br />
+            
+            <label>Number</label>
             <input type="number">
+            <br />
+
+            
+            <label>Password</label>
             <input type="password">
+            <br />
+
+            <label>Radio</label>
             <input type="radio">
+            <br />
+            
+            <label>Range</label>
             <input type="range">
+            <br />
+            
+            <label>Search</label>
             <input type="search">
+            <br />
+            
+            <label>Tel</label>
             <input type="tel">
+            <br />
+            
+            <label>Text</label>
             <input type="text">
+            <br />
+            
+            <label>Time</label>
             <input type="time">
+            <br />
+            
+            <label>Url</label>
             <input type="url">
+            <br />
+            
+            <label>Week</label>
             <input type="week">
+            <br />
+
+            <label>Textarea</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <br />
         </form>
+
         <h3>Exemplo de formulário de login</h3>
         <form action="\login.php" method="post">
             <p>Login</p>
