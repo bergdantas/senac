@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operadores</title>
+</head>
+<body> 
+    <p>Ver as saídas usando o console do navegador</p>
+    <script>
+        //declaração de variáveis
+        var a = '9';
+        var b = 9;
+        var c = '45';
+        var d = 45;
+
+        //operador de atribuicao
+        console.log('operador de atribuição');
+        console.log(a = b);
+
+        //operadores relacionais
+        console.log('operadores relacionais');
+        console.log(a == b); //igualdade abstrata (faz casting) - t
+        console.log(c === d); //igualdade estrita (não faz casting) - f
+        console.log(a != b); //diferença abstrata (faz casting) - f
+        console.log(c !== d); //diferença estrita (não faz casting) - t
+        console.log(b < d); //menor que - t
+        console.log(b <= d); //menor ou igual a - t
+        console.log(b > d); //maior que - f
+        console.log(b >= d); //maior ou igual a - f
+
+        //operadores aritiméticos
+        console.log('operadores aritiméticos');
+        console.log(b+d); //soma
+        console.log(a+c); //concatena
+        console.log(b-d); //subtrai
+        console.log(b*d); //multiplica
+        console.log(b/d); //divide
+        console.log(b%d); //resto
+        console.log(b**2); //potencia
+        
+        console.log('Incrementos e decrementos unitários');
+        console.log(++b); //incremento imediato
+        console.log(--d); //decremento imadiato
+        console.log(b++); //incremento retardado
+        console.log(d--); //decremento ratardado
+        
+</script>
+</body>
+</html>
