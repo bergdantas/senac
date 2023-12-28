@@ -1,0 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.itemMenu{
+    background-color: green;
+    border: 2px solid black;
+    margin: 2px;
+}
