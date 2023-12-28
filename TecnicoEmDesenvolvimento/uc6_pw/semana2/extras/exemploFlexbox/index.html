@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&family=Roboto:wght@900&display=swap" rel="stylesheet">
+        <title>Berg Dantas</title>
+        <style>
+            /*Por hora ficará aqui mesmo... Preguiça!  :P*/
+            *{
+                padding: 0;
+                margin: 0;
+            }
+
+            :root{
+                --corPrincipal: #000;
+                --corSecundaria: #fff;
+                --corTerciaria: #008080;
+                --corDaAnimacao: #797878;
+            }
+
+            h1{
+                font-family: 'Goldman', sans-serif;
+                color: var(--corSecundaria);
+            }
+
+            .cabecalho{
+                display:flex;
+                flex-direction: row;
+                background-color: var(--corPrincipal);
+            }
+            
+            .cabecalho-logo{
+                display: flex;
+                flex-grow: 1;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .cabecalho-menu{
+                display: flex;
+                justify-content: flex-end;
+                flex-grow: 4;
+                height: 15vh;
+                align-items: center;
+            }
+
+            a{
+                margin: 0 1vw 0 1vw;
+                text-decoration: none;
+                font-size: large;
+                text-transform: uppercase;
+            }
+
+            a:link{
+            color: var(--corSecundaria);
+            }
+            
+            a:visited{
+                color: var(--corSecundaria);
+            }
+            
+            a:active{
+                color: var(--corSecundaria);
+            }
+            
+            a:hover{
+                color: var(--corDaAnimacao);
+            }
+            
+            .conteudo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 60vh;
+            }
+
+            .rodape{
+                background-color: var(--corPrincipal);
+                color:var(--corSecundaria);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;   
+            }
+
+        </style>
+    </head>
+    <body>
+        <header class="cabecalho">
+            <div class="cabecalho-logo">
+                <h1>Berg Dantas</h1>
+            </div>
+            <nav class="cabecalho-menu">
+                <p class="itemMenu"><a href="#">Página inicial</a></p>
+                <p class="itemMenu"><a href="#">Aulas</a></p>
+                <p class="itemMenu"><a href="#">Projetos</a></p>
+                <p class="itemMenu"><a href="#">Jiu-Jitsu</a></p>
+                <p class="itemMenu"><a href="#">Contato</a></p>
+            </nav>
+        </header>
+        <section class="conteudo">
+            <img src="images/naruto_walk_GIF.gif" width="20%" />
+        </section>
+        <div>
+            <audio controls autoplay>
+                <source src="audio/naruto.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio> 
+        </div>
+        <footer class="rodape">
+            <p>Criado por Berg</p>
+            <p>2023</p>
+        </footer>
+    </body>
+</html>
