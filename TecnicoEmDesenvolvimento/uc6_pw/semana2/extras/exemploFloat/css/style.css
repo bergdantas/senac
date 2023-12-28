@@ -1,0 +1,128 @@
+/*DEFINIÇÃO DA FONTE*/
+@font-face {
+  font-family: "AlexBrush-Regular";
+  src: url("./fonts/AlexBrush-Regular.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/AlexBrush-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	    url("./fonts/AlexBrush-Regular.otf") format("opentype"), /* Open Type Font */
+	    url("./fonts/AlexBrush-Regular.svg") format("svg"), /* Legacy iOS */
+	    url("./fonts/AlexBrush-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+	    url("./fonts/AlexBrush-Regular.woff") format("woff"), /* Modern Browsers */
+	    url("./fonts/AlexBrush-Regular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*PROPRIEDADES DA PAGINA*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-color: #000;
+}
+
+/*LOGO*/
+header.cabecalho{
+	background-color: #4D4D4D;
+	width: 100%;
+
+}
+
+header.cabecalho > div.logo{
+	width: 30%;
+	float: left; 
+	padding-top: 20px;
+}
+
+header.cabecalho > div.logo > p > a{
+	text-decoration: none;
+	color: #ffffff;
+	margin-left: 25px;
+}
+
+header.cabecalho > div.logo > p{
+	font-family: "AlexBrush-Regular";
+	font-size: 300%;
+	color:#ffffff;
+
+}
+
+/* MENU*/
+header.cabecalho > nav.navegacao{
+	width: 70%;
+	float: right; 
+	padding-top: 8px;
+}
+
+nav.navegacao ul li a {
+    width: 100%;
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 20px;
+}
+
+nav.navegacao > ul > li{
+	display: inline-block;
+	text-align: center;
+	/*background-color: red; /* só testando coisas*/
+	padding: 30px;
+}
+
+nav.navegacao > ul > li > a:hover{
+	color: #808080;
+}
+
+nav.navegacao > ul {
+	float: right;
+}
+
+/*DIV PRINCIPAL PARA OS CONTEÚDOS*/
+div.conteudo{
+	overflow: hidden;
+	height: 430px;
+	width: 100%;
+	float: left;
+}
+
+div.conteudoE{
+	background-color: white;
+	height: 430px;
+	width: 40%;
+	float: left;
+}
+
+div.conteudoD{
+	overflow: scroll;
+	background-color: white;
+	height: 430px;
+	width: 60%;
+	float: right;
+}
+
+div.conteudoD > p{
+	float: right;
+	text-align: justify;
+	font-family: Arial;
+	padding-top: 30px; 
+	padding-left: 40px;
+	padding-right: 40px;
+	font-size:20px; 
+	overflow: auto;
+
+}
+
+/*RODAPÉ DO SITE*/
+footer.rodape{
+	background-color: #4D4D4D;
+	height: 80px;
+	width: 100%;
+	clear: both;
+	text-align: center;
+	font-size: 150%;
+	font-family: "AlexBrush-Regular";
+	color:white;
+ 	display:table-caption;
+ 	vertical-align: middle;
+ 	padding-top: 20px;
+}
