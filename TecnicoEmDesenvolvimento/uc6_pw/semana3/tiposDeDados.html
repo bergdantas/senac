@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tipos de dados</title>
+</head>
+<body>
+    <p>Ver as saídas usando o console do navegador</p>
+    <script>
+        //variáveis globais
+        var numero = 12.3;
+        var texto = 'Berg';
+        var logico = false; //true ou false
+        var nulo = null; //nada, vazio ou valor desconhecido
+        var indefinido; //valor não atribuído
+
+        //variáveis locais
+        function func() {
+            let soma;
+            soma = 3+2;
+            return soma;
+        }
+        
+        //constantes
+        const simbolo = Symbol('valorDoSimbolo');
+        const objeto = {
+            nome: 'João',
+            idade: 30,
+            cidade: 'Exemploville'
+        };
+
+        //tipo de dados.
+        console.log(typeof(numero));
+        console.log(typeof(texto));
+        console.log(typeof(logico));
+        console.log(typeof(nulo)); //rertorna object, é uma particularidade histórica do js. Posso usar "var === null" pra checar se o tipo do dado é null
+        console.log(typeof(indefinido));
+        console.log(typeof(func));
+        console.log(typeof(simbolo));
+        console.log(typeof(objeto));
+
+        //casting 
+        var valor = '19112003'; //inicio como string
+        console.log(valor + ' é do tipo ' + typeof(valor)); 
+        valor = Number(valor); //converto pra numero
+        console.log('Agora ' + valor + ' é do tipo ' + typeof(valor)); 
+    </script>
+</body>
+</html>
