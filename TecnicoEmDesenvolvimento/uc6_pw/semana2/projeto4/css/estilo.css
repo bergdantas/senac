@@ -1,0 +1,45 @@
+/* resetando as configurações iniciais do navegador */
+*{
+    margin: 0;
+}
+
+/*Importar fonte*/
+@font-face {
+    font-family: Logo;
+    src: url(../fontes/PressStart2P-Regular.ttf);
+}
+
+#textoDoLogotipo{
+    font-family: Logo;
+    font-size: 20px;
+    float: left;
+    padding: 15px;
+}
+
+#cabecalho{
+    background: #5D9E7E;
+}
+
+#navegacao{
+    float: right;
+}
+
+#navegacao > ul > li {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 15px;
+}
+
+#navegacao > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+#navegacao > ul > li > a:hover{
+    color: #fff;
+}
+
+header{
+    overflow: hidden;
+
+}
