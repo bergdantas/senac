@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #SaidaDeDados{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+<title>Contador de Cliques</title>
+</head>
+<body>
+  <button id="meuBotao">Clique Aqui</button>
+  <p id="contador">0 cliques</p>
+  <div id="SaidaDeDados">
+
+    </div>
+  <script>
+    var contador = 0;
+    document.getElementById("meuBotao").addEventListener("click", function() {
+        contador++;
+        document.getElementById("contador").innerHTML = contador + " clique(s)";
+        if (contador%2 == 0){
+            document.getElementById('SaidaDeDados').style.backgroundColor ='#000000'; 
+        }
+        else{
+            document.getElementById('SaidaDeDados').style.backgroundColor ='#836FFF';     
+        }
+    });
+  </script>
+</body>
+</html>
