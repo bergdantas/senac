@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Date()</title>
+</head>
+<body>
+    <script>
+        var hoje = new Date();
+        var agora = hoje.getHours();
+        var saudacao;
+        
+        //escolhe a saudação com base na hora
+        if (agora < 12){
+            saudacao = 'Bom dia!';
+        }else if (agora < 18){
+            saudacao = 'Boa tarde!';
+        }else{
+            saudacao = 'Boa noite!';
+        }
+        
+        document.write(saudacao);        
+    </script>
+</body>
+</html>
