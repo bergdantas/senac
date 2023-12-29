@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>getElementById</title>
+</head>
+<body>
+    <form>
+        <label>Primeiro número</label>
+        <input type="text" id="valor1">
+        <br />
+        <label>Segundo número</label>
+        <input type="text" id="valor2">
+        <br />
+        <button onclick="somar()">Somar</button>
+        <button onclick="subtrair()">Subtrair</button>
+        <button onclick="multiplicar()">Multiplicar</button>
+        <button onclick="dividir()">Dividir</button>
+    </form>
+    <p id="resultado"></p>
+    <script>
+        function number(value) {
+            //converte o valor para um número
+            return parseFloat(value); 
+        }
+
+    function somar() {
+        var var1 = number(document.getElementById('valor1').value);
+        var var2 = number(document.getElementById('valor2').value);
+        var resultado = var1 + var2;
+        alert('A soma é: ' + resultado);
+    }
+
+    function subtrair() {
+        var var1 = number(document.getElementById('valor1').value);
+        var var2 = number(document.getElementById('valor2').value);
+        var resultado = var1 - var2;
+        alert('A subtração é: ' + resultado);
+    }
+
+    function multiplicar() {
+        var var1 = number(document.getElementById('valor1').value);
+        var var2 = number(document.getElementById('valor2').value);
+        var resultado = var1 * var2;
+        alert('A multiplicação é: ' + resultado);
+    }
+
+    function dividir() {
+        var var1 = number(document.getElementById('valor1').value);
+        var var2 = number(document.getElementById('valor2').value);
+        if (var2 === 0) {
+            alert('Impossível dividir por zero');
+            return;
+        }
+        var resultado = var1 / var2;
+        alert('A divisão é: ' + resultado);
+    }
+    </script>
+</body>
+</html>
