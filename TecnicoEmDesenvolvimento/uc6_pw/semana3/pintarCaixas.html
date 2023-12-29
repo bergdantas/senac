@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>getElementById</title>
+    <style>
+        #SaidaDeDados{
+            background-color:rgb(204, 18, 18);
+            width: 100px;
+            height: 100px;
+            display: none;
+        }
+        #SaidaDeDados2{
+            background-color:#43a;
+            width: 100px;
+            height: 100px;
+            display:none
+        }
+
+    </style>    
+</head>
+<body>
+    <button id="btn-f1" onclick="btn1()">Botão 1</button>
+    <button id="btn-f2" onclick="btn2()"><Var>Botão 2</Var></button>
+    <div id="SaidaDeDados">
+    </div>
+    <div id="SaidaDeDados2">
+    </div>
+    <script>
+        function btn1(){
+            document.getElementById('SaidaDeDados').style.display='flex';
+            document.getElementById('SaidaDeDados2').style.display='none';
+        }
+        function btn2(){
+            document.getElementById('SaidaDeDados').style.display='none';
+            document.getElementById('SaidaDeDados2').style.display='flex';
+        }
+    </script>
+</body>
+</html>
